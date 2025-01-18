@@ -1,5 +1,10 @@
 class ActorsController < ApplicationController
   def index
-    render json: "bazinga"
+    @actors = Actor.all
+    render :index
+  end
+  def show
+    render json: "blegh"
+    # the_id = params[:id]
   end
 end

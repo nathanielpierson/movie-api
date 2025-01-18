@@ -1,4 +1,6 @@
-json.id actors.id
-json.first_name actors.first_name
-json.last_name actors.last_name
-json.known_for actors.known_for
+json.id actor.id
+json.first_name actor.first_name
+json.last_name actor.last_name
+json.known_for actor.known_for
+json.created_at actor.created_at
+json.updated_at actor.updated_at
