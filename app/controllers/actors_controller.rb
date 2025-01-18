@@ -4,8 +4,9 @@ class ActorsController < ApplicationController
     render :index
   end
   def show
-    render json: "blegh"
-    # the_id = params[:id]
+    the_id = params[:id]
+    @actor = Actor.find_by(id: params[:id])
+    render :show
   end
   def update
     render json: "hello"
