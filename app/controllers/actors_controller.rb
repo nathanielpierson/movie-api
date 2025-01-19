@@ -9,6 +9,13 @@ class ActorsController < ApplicationController
     render :show
   end
   def update
-    render json: "hello"
+    @actor = Actor.find_by(id: params[:id])
+    # render json: @actor
+    @actor.update(
+    first_name: params[:first_name] || @actor.first_name,
+    last_name: params[:last_name] || @actor.last_name,
+    known_for: params[:known_for] || @actor.known_for,
+    )
+    render :show
   end
 end
