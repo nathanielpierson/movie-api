@@ -58,3 +58,4 @@ end
 
 gem "rack-cors"
 gem "jwt"
+gem "http"
